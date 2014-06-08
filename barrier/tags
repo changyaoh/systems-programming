@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+NUM_BARRIER	tbarriers.c	6;"	d	file:
+barrier	tbarriers.c	/^static int barrier = 0;$/;"	v	file:
+bcond	tbarrier.c	/^static pthread_cond_t bcond = PTHREAD_COND_INITIALIZER;$/;"	v	file:
+bcond	tbarriers.c	/^static pthread_cond_t bcond = PTHREAD_COND_INITIALIZER;$/;"	v	file:
+bmutex	tbarrier.c	/^static pthread_mutex_t bmutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+bmutex	tbarriers.c	/^static pthread_mutex_t bmutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+computethread	main_barrier.c	/^void *computethread(void *arg)$/;"	f
+computethread	main_barriers.c	/^void *computethread(void *arg)$/;"	f
+count	tbarrier.c	/^static int count = 0;$/;"	v	file:
+count	tbarriers.c	/^static int count = 0;$/;"	v	file:
+initbarrier	tbarrier.c	/^int initbarrier(int n)$/;"	f
+initbarriers	tbarriers.c	/^int initbarriers(int n)$/;"	f
+limit	tbarrier.c	/^static int limit = 0;$/;"	v	file:
+limit	tbarriers.c	/^static int limit[NUM_BARRIER];$/;"	v	file:
+main	main_barrier.c	/^int main(int argc, char *argv[])$/;"	f
+main	main_barriers.c	/^int main(int argc, char *argv[])$/;"	f
+waitbarrier	tbarrier.c	/^int waitbarrier(void)$/;"	f
+waitbarriers	tbarriers.c	/^int waitbarriers(int barrier)$/;"	f
