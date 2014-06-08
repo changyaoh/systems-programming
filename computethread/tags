@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+TEN_MILLION	computethread.c	9;"	d	file:
+add	sharedsum.c	/^int add(double x)$/;"	f
+computethread	computethread.c	/^void *computethread(void *arg1)$/;"	f
+count	sharedsum.c	/^static int count = 0;$/;"	v	file:
+doneflag	doneflag.c	/^static int doneflag = 0;$/;"	v	file:
+donelock	doneflag.c	/^static pthread_mutex_t donelock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+errorlock	globalerror.c	/^static pthread_mutex_t errorlock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+getcountandsum	sharedsum.c	/^int getcountandsum(int *countp, double *sump)$/;"	f
+getdone	doneflag.c	/^int getdone(int *flag)$/;"	f
+geterror	globalerror.c	/^int geterror(int *error)$/;"	f
+getsum	sharedsum.c	/^int getsum(double *sump)$/;"	f
+globalerror	globalerror.c	/^static int globalerror = 0;$/;"	v	file:
+main	computethreadmain.c	/^int main(int argc, char *argv[])$/;"	f
+randsafe	randsafe.c	/^int randsafe(double *ranp)$/;"	f
+setdone	doneflag.c	/^int setdone(void)$/;"	f
+seterror	globalerror.c	/^int seterror(int error)$/;"	f
+showresults	showresults.c	/^int showresults(void)$/;"	f
+sum	sharedsum.c	/^static double sum = 0.0;$/;"	v	file:
+sumlock	sharedsum.c	/^static pthread_mutex_t sumlock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
