@@ -21,7 +21,7 @@ void *threadout(void *args)
 	c = buffer;
 
 	while (sem_wait(semlockp) == -1)
-		if (errno != EINER)
+		if (errno != EINTR)
 		{
 			fprintf(stderr, "Thread failed to lock semaphore\n");
 			return NULL;
