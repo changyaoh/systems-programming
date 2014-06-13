@@ -38,6 +38,3 @@ void *threadout(void *args)
 
 	return NULL;
 }
-
-
-

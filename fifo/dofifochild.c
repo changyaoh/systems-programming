@@ -36,7 +36,7 @@ int dofifochild(const char *fifoname, const char *idstring)
 		fprintf(stderr, "[%ld]:failed to write to pipe: %s\n", (long)getpid(), strerror(errno));
 		return 1;
 	}
-	fprintf(stderr, "[%ld]:finishing...\n", (long)getpid());
+	fprintf(stderr, "[%ld]:finishing: %s", (long)getpid(), buf);
 	return 0;
 
 }
@@ -51,6 +51,7 @@ ssize_t r_write(int fd, void *buf, size_t size)
 
 	for (bufp = buf, bytestowrite = size, totalbytes = 0; bytestowrite > 0; bufp += byteswritten, bytestowrite -= byteswritten) 
 	{
+		byteswritten = write(fd,bufp, bytestowrite);
 		if ((byteswritten == -1) && (errno != EINTR))
 			return -1;
 		if (byteswritten == -1)

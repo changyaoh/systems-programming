@@ -29,7 +29,7 @@ int dofifoparent(const char *fifoname)
 		fprintf(stderr, "[%ld]:failed to read from pipe: %s\n", (long)getpid(), strerror(errno));
 		return 1;
 	}
-	fprintf(stderr, "[%ld]:read %.*s\n", (long)getpid(), rval, buf);
+	fprintf(stderr, "[%ld]:read %s\n", (long)getpid(), buf);
 	return 0;
 }
 
